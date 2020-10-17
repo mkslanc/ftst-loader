@@ -453,7 +453,8 @@ function getTranspilationEmit(fileName, contents, instance, loaderContext) {
         }) :
         ftst_1.transpileModule(contents, {
             compilerOptions: Object.assign({}, instance.compilerOptions, {"transformNullishCoalesce": instance.loaderOptions.transformNullishCoalesce}, {rootDir: undefined}),
-            reportDiagnostics: true
+            reportDiagnostics: true,
+            fileName: fileName
         }, true)
 
 
